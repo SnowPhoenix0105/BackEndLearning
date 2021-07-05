@@ -1,0 +1,27 @@
+
+# IDEs
+
+.idea/
+.vscode/
+.vs/
+
+
+# Archives
+
+*.rar
+*.zip
+*.7z
+*.gz
+*.tar
+
+# Generated
+
+[Oo]utput/
+[Bb]in/
+[Bb]inary/
+*.jar
+*.exe
+*.dll
+*.lib
+
+
