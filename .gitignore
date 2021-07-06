@@ -19,6 +19,7 @@
 [Oo]utput/
 [Bb]in/
 [Bb]inary/
+[Nn]ode_modules/
 *.jar
 *.exe
 *.dll
