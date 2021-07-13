@@ -1,0 +1,13 @@
+GET http://localhost:8080/api/test
+
+
+###
+GET http://localhost:8080/api/req
+
+
+###
+GET http://localhost:8080/api/lookupReq
+
+
+###
+

@@ -1,0 +1,11 @@
+
+# IDEs
+*.iml
+.mvn/
+.idea/
+
+# Generated
+
+[Oo]ut/
+[Oo]utput/
+[Tt]arget/
