@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: chronograf-service
+  namespace: default
+  labels:
+    app: chronograf-service
+spec:
+  selector:
+    app: chronograf
+  type: NodePort 
+  ports: 
+  - port: 8081

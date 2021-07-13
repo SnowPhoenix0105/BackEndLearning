@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chronograf
+  namespace: default
+  labels:
+    app: chronograf
+spec:
+  selector:
+    matchLabels:
+      app: chronograf
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: chronograf
+    spec:
+      containers:
+      - name: chronograf
+        image: quay.io/influxdb/chronograf:1.9.0
+        # args:
+        # - --influxdb-url=influxdb:8086
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: PORT
+          value: "8081"
+        - name: INFLUXDB_URL
+          value: "http://influxdb:8086"
+        resources:
+          limits:
+            cpu: 100m
+            memory: 200Mi
+        ports:
+        - containerPort: 8081
+          
