@@ -9,3 +9,4 @@
 * 2021/7/11 Kubernetes学习日记（二）[https://www.cnblogs.com/SnowPhoenix/p/15000280.html](https://www.cnblogs.com/SnowPhoenix/p/15000280.html)
 * 2021/7/12 SpringBoot学习笔记（一）[https://www.cnblogs.com/SnowPhoenix/p/15008616.html](https://www.cnblogs.com/SnowPhoenix/p/15008616.html)
 * 2021/7/13 Kubernetes学习日记（三）[https://www.cnblogs.com/SnowPhoenix/p/15009070.html](https://www.cnblogs.com/SnowPhoenix/p/15009070.html)
+* 2021/7/18 Kubernetes学习日记（四）[https://www.cnblogs.com/SnowPhoenix/p/15027283.html](https://www.cnblogs.com/SnowPhoenix/p/15027283.html)
