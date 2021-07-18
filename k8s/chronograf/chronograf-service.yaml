@@ -10,4 +10,4 @@ spec:
     app: chronograf
   type: NodePort 
   ports: 
-  - port: 8081
+  - port: 8888

@@ -22,14 +22,34 @@ spec:
         # - --influxdb-url=influxdb:8086
         imagePullPolicy: IfNotPresent
         env:
-        - name: PORT
-          value: "8081"
+        # - name: PORT
+        #   value: "8081"
         - name: INFLUXDB_URL
           value: "http://influxdb:8086"
+        - name: INFLUXDB_USERNAME
+          valueFrom: 
+            secretKeyRef:
+              name: chronograf-secret
+              key: username
+        - name: INFLUXDB_PASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: chronograf-secret
+              key: password
         resources:
           limits:
             cpu: 100m
             memory: 200Mi
         ports:
-        - containerPort: 8081
+        - containerPort: 8888
+        startupProbe:
+          httpGet:
+            scheme: HTTP
+            port: 8888
+            path: /
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          successThreshold: 1
+          failureThreshold: 10
+          
           
