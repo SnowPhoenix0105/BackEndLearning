@@ -1,0 +1,34 @@
+POST http://localhost:8081/api/echo
+Content-Type: text/plain
+Authorization: {"uid":123, "roles":["User", "Admin"]}
+
+withAdminAuth
+
+###
+
+POST http://localhost:8081/api/echo
+Content-Type: text/plain
+Authorization: {"uid":123, "roles":["User"]}
+
+withUserAuth
+
+###
+
+POST http://localhost:8081/api/echo
+Content-Type: text/plain
+
+hello
+
+###
+
+GET http://localhost:8081/api/echo/withAuth
+Accept: application/json
+Authorization: {"uid":123, "roles":["User"]}
+
+###
+
+GET http://localhost:8081/api/echo/hello
+Accept: application/json
+
+###
+
